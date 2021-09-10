@@ -12,8 +12,8 @@ export default function ShareNow() {
     if(navigator.share) {
       await navigator.share({
         title: "title",
-        text: "your text",
-        url: "url to share",
+        text: "Mobilly Invite",
+        url: "https://mobillyinvite.com/",
         files: [file]     
       })
         .then(() => console.log('Successful share'))
