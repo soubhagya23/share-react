@@ -1,14 +1,14 @@
 import React, {useEffect} from "react";
 import ReactDOM from "react-dom";
 import image from "./shareImage.jpeg"
-
+import video from "./TestVideo.mp4"
 
 export default function ShareNow() {
   const handleOnSubmit= async()=> {
-    const response = await fetch(image);
-    // here image is url/location of image
+    const response = await fetch(video);
+    
     const blob = await response.blob();
-    const file = new File([blob], 'share.jpg', {type: blob.type});
+    const file = new File([blob], 'share.mp4', {type: blob.type});
     console.log(file);
     if(navigator.share) {
       await navigator.share({
