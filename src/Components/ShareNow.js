@@ -49,7 +49,7 @@ export default function ShareNow() {
       >
         Share
       </button>
-      <a href="upi://pay?pa=319873971865@scb&amp;pn=YATIN KAPOOR &amp;cu=INR" class="upi-pay1">Pay Now !</a>
+      <a href="upi://pay?pa=919873971865@scb&amp;pn=YATIN KAPOOR &amp;cu=INR" class="upi-pay1">Pay Now !</a>
     </div>
   );
 }
